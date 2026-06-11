@@ -1,0 +1,7 @@
+build/
+slim_test/build/
+*.dylib
+*.o
+*.d
+slim_test/test.ll
+slim_test/test.slim.ll

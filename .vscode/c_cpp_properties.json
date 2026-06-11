@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/opt/llvm@14/include",
+                "/usr/local/include",
+                "/usr/local/include/slim"
+            ],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "cppStandard": "c++17",
+            "macFrameworkPath": []
+        }
+    ],
+    "version": 4
+}
