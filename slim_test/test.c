@@ -1,9 +1,9 @@
 int u, v;
-int *x, *y;
+int *x, **y;
 
 void foo() {
     x = &u;
-    y = x;
+    y = &x;
     int a = 5;
     int b = a + 3;
 }
