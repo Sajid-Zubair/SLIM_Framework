@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.5)
 PROJECT(slim)
 
 #set(ENV{LLVM_DIR} /usr/lib/llvm-14/lib/cmake/llvm)
