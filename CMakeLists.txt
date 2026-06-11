@@ -40,7 +40,7 @@ else ()
     remove_definitions(-DDEBUG=1)
 endif()
 
-include_directories(include)
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
 find_package(LLVM REQUIRED CONFIG)
 add_definitions(${LLVM_DEFINITIONS})
@@ -66,4 +66,7 @@ install(TARGETS slim LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(DIRECTORY
     include/ DESTINATION /usr/local/include/slim)
 add_library(slimPass SHARED Passes/GlobalInit.cpp)
+target_link_libraries(slimPass LLVM)
+
 add_library(mergeExit SHARED Passes/MergeExit.cpp)
+target_link_libraries(mergeExit LLVM)

@@ -1,6 +1,6 @@
 #ifndef IR_H
 #define IR_H
-#include "Instructions.h"
+#include "Instruction.h"
 #include "llvm/Analysis/BasicAliasAnalysis.h"
 #include "llvm/Analysis/MemorySSA.h"
 #include "llvm/IR/Module.h"
