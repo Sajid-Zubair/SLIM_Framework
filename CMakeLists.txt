@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.4)
 PROJECT(slim)
 
-set(ENV{LLVM_DIR} /usr/lib/llvm-14/lib/cmake/llvm)
+#set(ENV{LLVM_DIR} /usr/lib/llvm-14/lib/cmake/llvm)
+set(ENV{LLVM_DIR} /opt/homebrew/opt/llvm@14/lib/cmake/llvm)
 
 option(MemorySSAFlag "To use Memory SSA for creating different SSA versions of globals and address taken locals" OFF)
 option(DiscardPointers "To discard instructions that contain or depend on pointer variables" OFF)
