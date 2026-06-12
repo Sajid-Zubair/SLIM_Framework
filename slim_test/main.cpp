@@ -1,6 +1,7 @@
 #include "llvm/IRReader/IRReader.h"
 #include "llvm/IR/LLVMContext.h"
 #include "slim/IR.h"
+#include "slim/LivenessPass.h"
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -21,6 +22,9 @@ int main(int argc, char *argv[]) {
 
     slim::IR *slimIR = new slim::IR(module);
     slimIR->dumpIR();
+
+    slim::LivenessPass liveness(slimIR);
+    liveness.run();
 
     return 0;
 }

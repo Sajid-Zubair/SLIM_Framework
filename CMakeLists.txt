@@ -54,6 +54,7 @@ add_library(slim SHARED
     Instructions.cpp
     Operand.cpp
     SLIMDebug.cpp
+    LivenessPass.cpp
 )
 
 target_link_libraries(slim LLVM)
